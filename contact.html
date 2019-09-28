@@ -3,61 +3,83 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Janet Reid</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
-<body class="bg-secondary">
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container">
-      <a class="navbar-brand p-3 mb-2 bg-info text-white href=" #">Janet Reid</a>
+<body>
+  <section>
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand p-3 mb-2 bg-info text-white ml-4" href="#">Janet Reid</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
+      <div class="collapse navbar-collapse justify-content-end pr-5 mr-5" id="navbarNavAltMarkup">
+        <div class="navbar-nav ">
+          <a class="nav-item nav-link active" href="#">About Me<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">Portfolio</a>
           <a class="nav-item nav-link" href="#">Contact</a>
+
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+    <!--Header Container-->
+    <div id="container">
+      <div class="header">
+        <h2>Contact</h2>
+      </div>
+      <!--Form-->
+      <div class="contact-container">
+        <form action="/action_page">
+          <div class="row">
+            <div class="boxes">
+              <label for="name">Name</label>
+            </div>
+            <div class="boxes">
+              <input type="text" id="name" name="name" placeholder="Your name.." />
+            </div>
+          </div>
+          <div class="row">
+            <div class="boxes">
+              <label for="email">Email</label>
+            </div>
+            <div class="boxes">
+              <input type="text" id="email" name="email" placeholder="Your email.." />
+            </div>
+          </div>
+          <div class="boxes">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="" style="height:150px">
+  </textarea>
 
-  <main role="main" class="container">
-    <div class="d-flex align-items-center p-3 my-3 text-black bg-white rounded box-shadow">
-      <h3 class="mb-0 text-info">Contact</h3>
-    </div>
-    <div class="my-3 p-3 bg-white rounded box-shadow">
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1"><strong>Name</strong></label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <label for="FormControlInput2"><strong>Email</strong></label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="FormControlTextarea1"><strong>Message</strong></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
       </form>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="page-footer font-small pt-1 bg-info">
-    <div class="footer-copyright text-center py-2">
-      <p><strong>Copyright &copy;</strong></p>
-    </div>
-  </footer>
+  </section>
+  <!--Footer-->
+  <div class="footer">
+    <p>Copyright &copy;</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

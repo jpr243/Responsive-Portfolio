@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  overflow: hidden;
+  width: 100%;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 680px;
+  width: 1340px;
+  border-top: 15px solid #dddddd;
+  border-bottom: 120px solid #dddddd;
+  border-left: 170px solid #dddddd;
+  border-right: 170px solid #dddddd;
+  margin: 5px;
+}
+
+#container {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  border-top: 15px solid #dddddd;
+  border-bottom: 120px solid #dddddd;
+  border-left: 170px solid #dddddd;
+  border-right: 170px solid #dddddd;
+  margin: 0px;
+}
+
+.left {
+  float: left;
+  padding: 0px 10px 10px 0px;
+}
+
+h1,
+h3 {
+  color: #4aaaa5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  color: #4aaaa5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  line-height: 60px;
+  border-bottom: 2px solid #cccccc;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12x 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  width: 20%;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* I created a color change when hovering over the submit button */
+input[type="submit"]:hover {
+  background-color: #777777;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.boxes {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#img-container {
+  float: left;
+  width: 50%;
+  padding: 10px 10px 5px 5px;
+  position: relative;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.text-block {
+  position: relative;
+  bottom: 40px;
+  left: 5px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  width: auto;
+}
+
+/* Clear floats associated with images on Portfolio */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  background-color: #666666;
+  padding: 20px;
+  height: 15px;
+  width: 100%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin: 0px;
+  border-top: 8px solid #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+  #container {
+    width: 980px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 768px;
+    height: auto;
+  }
+  #img.container {
+    max-width: auto;
+    max-height: auto;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #container {
+    width: 640px;
+    height: auto;
+  }
+  header {
+    position: static;
+    text-align: left;
+  }
+  .text-block {
+    position: static;
+  }
+}
